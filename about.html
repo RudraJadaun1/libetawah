@@ -145,11 +145,11 @@
 
             clickCount++;
 
-            if (clickCount === 6) {
+            if (clickCount === 4) {
                 let endTime = new Date().getTime();
                 let elapsedTime = (endTime - startTime) / 1000; // Convert to seconds
 
-                if (elapsedTime <= 3) {
+                if (elapsedTime <= 2) {
                     window.location.href = 'admin.html';
                 } else {
                     // Reset count if the clicks took more than 5 seconds
