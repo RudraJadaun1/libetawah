@@ -1,0 +1,173 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpapers.com/images/featured/space-sjryfre8k8f6i3ge.jpg'); /* Replace with your desired background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            padding: 20px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        #logo {
+            max-width: 40px;
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .translucent-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+            max-width: 600px;
+            width: 80%;
+        }
+
+        p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+
+        button {
+            background-color: rgba(52, 152, 219, 0.7);
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: rgba(41, 128, 185, 0.7);
+        }
+    </style>
+    <title>Contact Us - Kendriya Vidyalaya Etawah</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="https://pbs.twimg.com/profile_images/1590621649703178241/Ub06avKs_400x400.png" alt="School Logo">
+            <h1>Kendriya Vidyalaya Etawah</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="books.html">Books</a>
+            <a href="ncert.html">NCERT Books</a>
+        </nav>
+    </header>
+
+    <div class="translucent-box">
+        <p>Contact Kendriya Vidyalaya Etawah:</p>
+        <p>Vidyalaya Address:</p>
+        <p>Kendriya Vidyalaya Etawah,</p>
+        <p>Village – Harsauli, P.O.- Kunaira,</p>
+        <p>Behind 28 BTN PAC, Etawah, Uttar Pradesh - 206001</p>
+        <p>Latitude 26.819389, Longitude 78.997145</p>
+        <p>State: Uttar Pradesh</p>
+        <p>Phone No: 7078640918</p>
+        <p>Email: kvetawah@gmail.com</p>
+        <p>**CAUTION:**
+
+Please refrain from posting inappropriate content on this platform. Your computer ID, timestamp, and email may be tracked for moderation purposes.
+
+Thank you for your cooperation.
+</p>
+
+        <!-- Formspree form -->
+        <form action="https://formspree.io/f/xwkgvnlb" method="post">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

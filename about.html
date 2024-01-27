@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpapers.com/images/featured/space-sjryfre8k8f6i3ge.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        #logo {
+            max-width: 40px;
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .translucent-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 80px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 150px;
+            max-width: 800px;
+            width: 80%;
+        }
+
+        p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        .administration-box {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 8px;
+        }
+    </style>
+    <title>About Us - Kendriya Vidyalaya Etawah</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="https://pbs.twimg.com/profile_images/1590621649703178241/Ub06avKs_400x400.png" alt="School Logo">
+            <h1>Kendriya Vidyalaya Etawah</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="books.html">Books</a>
+            <a href="ncert.html">NCERT Books</a>
+        </nav>
+    </header>
+
+    <div class="translucent-box">
+        <p>
+            Kendriya Vidyalaya Sangathan (KVS) is a prominent educational organization in India, established by the Ministry of Education, Government of India. Founded in 1963, KVS manages a vast network of Kendriya Vidyalayas (Central Schools) across the country and abroad. These schools aim to provide quality education to the children of government employees, ensuring a uniform curriculum and fostering national integration.
+
+            KVS is committed to promoting academic excellence, holistic development.
+        </p>
+        <p>
+            The Kendriya Vidyalaya Sangathan (KVS) libraries stand as enriching hubs of knowledge, playing a pivotal role in the holistic development of students. These libraries, integral to each Kendriya Vidyalaya (Central School), serve as dynamic spaces that extend beyond textbooks. With an extensive collection of books, journals, and multimedia resources, KVS libraries foster a love for reading and independent research.
+
+            KVS libraries are designed to cater to the diverse interests and academic needs of students.
+        </p>
+        <p>About the Developer - Rudra Pratap Singh:</p>
+        <p>Hey, this web is made by me, Rudra Pratap of 9th A for the Library of KVE</p>
+    </div>
+
+    <!-- Administration Box -->
+    <div class="administration-box" onclick="checkAdminAccess()">
+        Admin
+    </div>
+
+    <script>
+        let clickCount = 0;
+        let startTime;
+
+        function checkAdminAccess() {
+            if (clickCount === 0) {
+                startTime = new Date().getTime();
+            }
+
+            clickCount++;
+
+            if (clickCount === 5) {
+                let endTime = new Date().getTime();
+                let elapsedTime = (endTime - startTime) / 1000; // Convert to seconds
+
+                if (elapsedTime <= 3) {
+                    window.location.href = 'admin.html';
+                } else {
+                    // Reset count if the clicks took more than 5 seconds
+                    clickCount = 0;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

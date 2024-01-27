@@ -1,0 +1,155 @@
+<!-- books.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpapers.com/images/featured/space-sjryfre8k8f6i3ge.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+            padding: 20px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        #logo {
+            max-width: 40px;
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .translucent-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+            max-width: 600px;
+            width: 80%;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* Additional styles for Library Options */
+        h3 {
+            color: #fff;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .library-options {
+            margin-top: 20px;
+        }
+
+        .library-options li {
+            font-size: 18px;
+        }
+
+        .library-options a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .library-options a:hover {
+            color: #2980b9;
+        }
+    </style>
+    <title>Books - Kendriya Vidyalaya Etawah</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="https://pbs.twimg.com/profile_images/1590621649703178241/Ub06avKs_400x400.png" alt="School Logo">
+            <h1>Kendriya Vidyalaya Etawah</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="books.html">Books</a>
+            <a href="ncert.html">NCERT Books</a>
+        </nav>
+    </header>
+
+    <div class="translucent-box">
+        <h2>Welcome to the Books Section</h2>
+        <p>Explore a variety of books available at Kendriya Vidyalaya Etawah.</p>
+
+        
+        </ul>
+
+        <!-- Library Options -->
+        <h3>Library Options</h3>
+        <ul class="library-options">
+            <li><a href="https://manybooks.net/" target="_blank">Library 1 - ManyBooks</a></li>
+            <li><a href="https://books.google.com/" target="_blank">Library 2 - Google Books</a></li>
+        </ul>
+    </div>
+</body>
+</html>
